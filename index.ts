@@ -1,7 +1,12 @@
 import { generateText, streamText,tool } from "ai"
 import { valibotSchema } from "@ai-sdk/valibot"
-import { google } from "@ai-sdk/google"
 import * as v from "valibot"
+import { createGoogleGenerativeAI } from '@ai-sdk/google';
+
+const google = createGoogleGenerativeAI({
+  // baseURL:Bun.env.BaseURL,
+  apiKey: Bun.env.GOOGLE_API_KEY,
+});
 
 const testtool = tool({
     description: '指定した土地の天気を取得するツールです。',
