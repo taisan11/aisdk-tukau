@@ -1,0 +1,21 @@
+{
+  "name": "aisdk-tukau",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/marked-terminal": "^6.1.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^1.1.27",
+    "@ai-sdk/valibot": "^0.0.33",
+    "ai": "^4.1.66",
+    "marked": "^15.0.7",
+    "marked-terminal": "^7.3.0",
+    "valibot": "^1.0.0"
+  }
+}
